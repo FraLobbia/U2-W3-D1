@@ -21,12 +21,16 @@ window.onload = () => {
 
 		mioDiv.appendChild(mioSpan);
 		listaMemo.appendChild(mioDiv);
+
+		const allIcons = document.getElementsByTagName("i");
+
+		for (let i = 0; i < allIcons.length; i++) {
+			const element = allIcons[i];
+			element.addEventListener("click", function () {
+				// this.parentNode.remove();
+				const x = this.parentElement;
+				x.parentElement.remove();
+			});
+		}
 	});
 };
-
-// const allIcons = document.getElementsByTagName(i);
-// allIcons.forEach(element => {
-//     element.addEventListener('click', elimina = (e) {
-
-//     })
-// });
