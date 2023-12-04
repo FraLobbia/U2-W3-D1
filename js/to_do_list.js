@@ -10,10 +10,23 @@ window.onload = () => {
 		const mioDiv = document.createElement("div");
 		mioDiv.classList.add("memo");
 		const mioSpan = document.createElement("span");
-		mioSpan.innerHTML = `${memo.value} <i class="bi bi-x-circle-fill text-danger fs-3"></i>`;
+		mioSpan.classList.add(
+			"d-flex",
+			"align-items-center",
+			"justify-content-between"
+		);
+		mioSpan.innerHTML = `${memo.value} <i class="bi bi-x-circle-fill text-danger fs-3 me-4"></i
+        >`;
 		memo.value = "";
 
 		mioDiv.appendChild(mioSpan);
 		listaMemo.appendChild(mioDiv);
 	});
 };
+
+// const allIcons = document.getElementsByTagName(i);
+// allIcons.forEach(element => {
+//     element.addEventListener('click', elimina = (e) {
+
+//     })
+// });
