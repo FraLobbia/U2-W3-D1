@@ -3,10 +3,35 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
 		<title>Esercizio JS</title>
 	</head>
-	<body>
-		<h1>Esercizio JS</h1>
-		<script src="D4.js"></script>
+	<body class="bg-primary">
+		<div class="container">
+			<form class="m-auto mt-5 d-flex flex-column">
+				<div>
+					<label for="inputMemo" class="form-label fs-1 text-white"
+						>Segna il tuo promemoria!</label
+					>
+					<input type="text" class="form-control" id="inputMemo" />
+				</div>
+
+				<button type="submit" class="btn btn-secondary mt-4">Submit</button>
+			</form>
+			<hr class="border border-white" />
+		</div>
+		<div class="container" id="listaMemo">
+			<!--  qui vanno i memo -->
+		</div>
+
+		<script src="js/D4.js"></script>
+		<script src="js/D4-EXTRA.js"></script>
+		<script src="js/to_do_list.js"></script>
 	</body>
 </html>

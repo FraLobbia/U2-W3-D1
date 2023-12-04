@@ -1,0 +1,13 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+
+.memo {
+    background-color: white;
+    padding-block: 0.5rem;
+    border-radius: 8px;
+    margin-block: 1rem;
+
+}
+
+.memo>span {
+    padding-left: 10px;
+}
